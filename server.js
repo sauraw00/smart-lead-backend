@@ -53,6 +53,7 @@ if (!isVercel) {
 }
 
 // Export app for Vercel serverless functions
+// This must be at the end and always exported
 module.exports = app;
 
 
