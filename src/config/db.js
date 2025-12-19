@@ -8,7 +8,7 @@ async function connectDb() {
     return;
   }
 
-  const uri = process.env.MONGODB_URI || 'mongodb://localhost:27017/smart_lead_db';
+  const uri = process.env.MONGODB_URI || 'mongodb+srv://gujjarsaurav123:123@fileupload.vxfp99s.mongodb.net/?smart-leads retryWrites=true&w=majority&appName=myData'
 
   mongoose.set('strictQuery', true);
 
@@ -22,7 +22,7 @@ async function connectDb() {
   } catch (error) {
     console.error('MongoDB connection error:', error);
     isConnected = false;
-    throw error;
+    throw error
   }
 }
 
