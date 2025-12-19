@@ -32,5 +32,6 @@ function startSyncCron() {
 }
 
 module.exports = startSyncCron;
+module.exports.runSyncJobOnce = runSyncJobOnce;
 
 
