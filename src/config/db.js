@@ -8,7 +8,8 @@ async function connectDb() {
     return;
   }
 
-  const uri = process.env.MONGODB_URI || 'mongodb+srv://gujjarsaurav123:123@fileupload.vxfp99s.mongodb.net/?smart-leads retryWrites=true&w=majority&appName=myData'
+  const uri = process.env.MONGODB_URI || 'mongodb+srv://gujjarsaurav123:123@fileupload.vxfp99s.mongodb.net/smart-leads?retryWrites=true&w=majority&appName=myData';
+
 
   mongoose.set('strictQuery', true);
 
